@@ -7,7 +7,6 @@ T binary_Search (const std::vector<T> & arr, I start, I end, const T key)
   
     if (start <= end) {
         I mid = start + (end - start) / 2;
-        //Best Case
         if (*mid == key) {
             return mid - arr.begin();
         }
