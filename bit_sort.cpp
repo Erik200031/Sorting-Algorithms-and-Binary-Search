@@ -21,7 +21,7 @@ long max_number_input ( const std::string & path ) {
 }
 
 void bit_sort ( const std::string & path) {
-    const int max = max_number_input(path) + 1;
+    const long max = max_number_input(path) + 1;
     std::ifstream fin;
     boost::dynamic_bitset<> bset(max, 0);
     fin.open( path );
